@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    font-weight: bold;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head h1 {
+    font-size: 4rem;
+}
+
+span {
+    color: teal;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-bar .menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar .menu li a:hover {
+    text-decoration: none;
+    border-bottom: 5px solid teal;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+
+.head .nav-bar .hamburger {
+    display: none;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-bar .delete {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+#Acceuil {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+    align-items: center;
+}
+
+#Acceuil .bienvenue {
+    padding: 10px;
+    line-height: 1.9rem;
+}
+
+#Acceuil .bienvenue h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+}
+
+#Acceuil .bienvenue p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+#Acceuil .bienvenue .buy, .voir {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: teal;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+#Acceuil .bienvenue .buy:hover, .voir:hover {
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+#Acceuil img {
+    top: 0;
+    width: 600px;
+    height: 600px;
+    transition: transform 0.5s ease;
+}
+
+#Acceuil  img:hover {
+    transform: scale(1.1);
+}
+#Actualités {
+    display: block;
+    padding: 10px;
+}
+
+#Actualités h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+}
+
+#Actualités .actu {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.actu .box {
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
+.box img {
+    width: 370px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.box img:hover  {
+    transform: scale(1.1);
+}
+
+#Actualités .actu .box .buy, .voir {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: teal;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+#Actualités .actu .box .buy:hover, .voir:hover {
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backToTopBtn:hover {
+    background-color: teal;
+}
+
+#follow {
+    display: block;
+    text-align: center;;
+    margin: 10rem 0;
+}
+
+#follow h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+#follow .Contact {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#follow .Contact .contacter{
+    border: solid 1px black;
+    border-radius: 15px;
+    text-align: center;
+    width: 370px;
+    padding: 5px;
+}
+
+
+#follow .Contact .contacter img  {
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    padding-bottom: 10px;
+}
+
+
+
+#follow .Contact .contacter img:hover  {
+    transform: scale(1.1);
+}
+
+
+#follow .Contact .contacter a img  {
+    border-radius: 0;
+}
+
+#follow .Contact .contacter .suivre img  {
+    padding: 0 3px;
+}
+
+
+
+#apropos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+}
+
+#apropos .compagnie,
+.services, h2 {
+    padding-bottom: 1.5rem;
+}
+
+#apropos .compagnie,
+.services, p {
+    line-height: 1.5rem;
+}
+
+
+#foot {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: rgba(0, 128, 128, 0.51);
+    color: white;
+}
+
+#foot a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 1.1rem;
+}
+
+#foot a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1281px) {
+
+.head {
+    margin: 1rem;
+}
+    #Acceuil {
+        margin: 5rem 1rem;
+        padding-bottom: 1rem;
+    }
+    #Acceuil img {
+        top: 0;
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+   
+#follow .Contact {
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+    
+}
+
+@media (max-width: 911px) {
+
+    #Acceuil {
+        display: block;
+    }
+    #Acceuil img {
+    
+        top: 0;
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 900px) {
+    .head {
+        margin: 1rem;
+    }
+     
+}
+@media (max-width: 1315px) {
+    #Actualités .actu {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+    }
+
+}
+
+@media (max-width: 835px) {
+    #Actualités .actu {
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    #Actualités .actu {
+        display: grid;
+        grid-template-columns: repeat(1, 370px);
+    }
+
+    #follow .Contact {
+        display: grid;
+        grid-template-columns: repeat(1, 370px);
+    }
+}
+
+@media (max-width: 857px) {
+
+    #apropos {
+        display: block;
+    }
+
+    #apropos .compagnie {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .head .nav-bar .menu {
+        display: none;
+        background-color: rgba(0, 128, 0, 0.208);
+    }
+
+    .head .nav-bar .menu li {
+        padding: 10px;
+    }
+    .head .nav-bar .hamburger {
+        display: block;
+    }
+    
+.nav-bar .delete {
+    display: none;
+    position: relative;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+}
+}
+
+@media (max-width: 431px) {
+    body {
+        padding: 1rem;
+
+    }
+    .head,
+    #Accueil,
+    #Actualités,
+    #Contact,
+    #apropos,
+    #foot {
+        margin: 0;
+        padding: 0;
+    }
+    .head .nav-bar .menu {
+        font-size: 0.8rem;
+    }
+    .head h1 {
+        font-size: 2rem;
+    }
+
+    .head .nav-bar {
+        font-size: 0.7rem;
+    }
+    #Acceuil {
+        margin: 0;
+    }
+    #Acceuil .bienvenue {
+        padding: 10px 0;
+    }
+    #Acceuil .bienvenue h1 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #Acceuil .bienvenue p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    
+#Acceuil .bienvenue .buy, .voir {
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+}
+
+#Actualités h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+#foot {
+    display: block;
+    text-align: center;
+}
+}
+
+@media (max-width: 365px) {
+    .head .nav-bar .menu {
+        font-size: 0.6rem;
+    }
+}
